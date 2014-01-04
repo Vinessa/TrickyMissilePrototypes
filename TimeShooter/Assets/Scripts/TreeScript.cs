@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-enum Ages {baby, young, normal, old, superOld};
+
 
 public class TreeScript : MonoBehaviour 
 {

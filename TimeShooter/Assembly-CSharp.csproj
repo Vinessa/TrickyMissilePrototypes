@@ -46,7 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BulletScript.cs" />
+     <Compile Include="Assets\Scripts\EagleScript.cs" />
+     <Compile Include="Assets\Scripts\GlobalsScript.cs" />
+     <Compile Include="Assets\Scripts\PickUpStuffScript.cs" />
      <Compile Include="Assets\Scripts\ShootingScript.cs" />
+     <Compile Include="Assets\Scripts\Tree2Script.cs" />
      <Compile Include="Assets\Scripts\TreeScript.cs" />
   </ItemGroup>
   <ItemGroup>
