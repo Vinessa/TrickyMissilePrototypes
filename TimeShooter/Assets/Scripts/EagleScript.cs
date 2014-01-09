@@ -66,14 +66,18 @@ public class EagleScript : MonoBehaviour {
 		if(effect > 0)
 		{
 			if(age == Ages.old)
-				Destroy (this.gameObject);
+			{
+				//Destroy (this.gameObject);
+			}
 			else
 				age++;
 		}
 		else if (effect < 0)
 		{
 			if(age == Ages.baby)
-				Destroy (this.gameObject);
+			{
+				//Destroy (this.gameObject);
+			}
 			else
 				age--;
 		}

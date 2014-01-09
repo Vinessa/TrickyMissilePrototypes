@@ -1,9 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Tree2Script.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GlobalsScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\Tree2Script.cs" Line="38" Column="3" />
+      <File FileName="Assets\Scripts\EagleScript.cs" Line="66" Column="17" />
+      <File FileName="Assets\Scripts\Tree2Script.cs" Line="24" Column="3" />
       <File FileName="Assets\Scripts\GlobalsScript.cs" Line="7" Column="2" />
+      <File FileName="Assets\Scripts\LavaScript.cs" Line="13" Column="4" />
+      <File FileName="Assets\Scripts\ShootingScript.cs" Line="15" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

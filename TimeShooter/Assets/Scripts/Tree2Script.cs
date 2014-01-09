@@ -15,13 +15,14 @@ public class Tree2Script : MonoBehaviour {
 	public GameObject treePrefab;
 	float treeYPos = 3.049999f;
 	float acornYPos = 0;
+	bool dead = false;
 
 
-	Ages age;
+	public Ages age;
 
 	void Start()
 	{
-		if(Time.realtimeSinceStartup > 2)
+		if(Time.timeSinceLevelLoad > 2)
 		{
 			//acorn.SetActive(true);
 			player = GameObject.FindGameObjectWithTag("Player");
@@ -36,10 +37,20 @@ public class Tree2Script : MonoBehaviour {
 			Aged(0);
 		}
 	}
+	public void Aged(Ages newAge)
+	{
+		age = newAge;
+
+		if(age >= Ages.superOld)
+			dead = true;
+		if(age <= Ages.pre)
+			dead = true;
+
+		HandleNewAge();
+	}
 
 	void Aged (int effect)
 	{
-		bool dead = false;
 		if(effect > 0)
 		{
 			if(age >= Ages.superOld)
@@ -58,6 +69,11 @@ public class Tree2Script : MonoBehaviour {
 				age--;
 		}
 
+		HandleNewAge();
+	}
+
+	void HandleNewAge()
+	{
 		if(dead == false)
 		{
 			switch(age)
